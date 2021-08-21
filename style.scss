@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.cover-image img {
+    width: 100%;
+}
+
+.cover-image nav {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.cover-image nav ul {
+    list-style-type: none;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cover-image nav ul li {
+    float: right;
+}
+
+.cover-image nav ul li a {
+    color: white;
+    font-family: Comic Sans MS;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px;
+    font-size: 24px;
+    font-family: 'Barlow', sans-serif;
+    border-radius: 40px;
+    margin-top: 5px;
+}
+
+.cover-image nav ul li a:hover {
+    background-color: rgb(0, 0, 114);
+}
+
+.cover-image nav ul li:first-child {
+    float: left;
+}
+
+.cover-image nav ul li:first-child > a {
+    font-family: 'Fraunces', serif;
+}
+
+.cover-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-image h1 {
+    position: absolute;
+    top: 300px;
+    font-family: 'Fraunces', serif;
+    color: white;
+}
+
+.text {
+    width: 50%;
+    text-align: center;
+    padding: 50px;
+    float: left;
+}
+
+.text h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+}
+
+.text p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.text a {
+    color: black;
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+}
+
+.underline {
+    background-color: yellow;
+    height: 0.5em;
+    width: 120px;
+    border-radius: 0.25em;
+}
+
+.underline:hover, .text a:hover .underline {
+    background-color: orange;
+}
+
+.image {
+    width: 50%;
+    float: left;
+}
+
+.image img {
+    width: 100%;
+}
+
+.text, .image {
+    display: inline-block;
+}
