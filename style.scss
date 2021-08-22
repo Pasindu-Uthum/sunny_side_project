@@ -69,7 +69,7 @@
 .text {
     width: 50%;
     text-align: center;
-    padding: 0px 50px;
+    padding: 0px 20px;
     float: left;
 }
 
@@ -90,12 +90,17 @@
     font-family: 'Fraunces', serif;
     text-decoration: none;
     font-size: 1vw;
+    z-index: 1;
+    display: block;
+    padding-top: 10px;
 }
 
 .underline {
-    height: 0.5em;
-    width: 100px;
-    border-radius: 0.25em;
+    height: 0.2em;
+    width: 8vw;
+    border-radius: 0.1em;
+    padding-top: 0;
+    z-index: -1;
 }
 
 
@@ -112,7 +117,7 @@
     display: inline-block;
 }
 
-.faluda-display::after, .egg-display::after, .main-content::after, .testimonials::after, .image-row::after {
+.faluda-display::after, .egg-display::after, .main-content::after, .testimonials::after, .image-row::after, .images-1::after , .images-2::after, .orange-cherry::after {
     content: "";
     clear: both;
     display: table;
@@ -136,17 +141,19 @@
 }
 
 .images-1 h3, .images-2 h3 {
-    padding-top: 150px;
+    padding-top: 170px;
     text-align: center;
     font-family: 'Fraunces', serif;
 }
 
 .images-1 p, .images-2 p {
-    padding-top: 260px;
-    padding-left: 0px;
+    padding-top: 240px;
     text-align: center;
     font-weight: bolder;
     font-family: 'Barlow', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
 }
 
 .images-1 h3, .images-1 p {
@@ -219,3 +226,40 @@
     padding: 20px;
 }
 
+.cover-image nav ul li:last-child {
+    display: none;
+}
+
+@media screen and (max-width: 772px) {
+    .images-1 h3, .images-2 h3 {
+        padding-top: 70px;
+    }
+    
+    .images-1 p, .images-2 p {
+        padding-top: 140px;
+    }
+}
+
+@media screen and (max-width: 616px) {
+    .cover-image nav ul li:first-child {
+        display: block;
+    }
+    .cover-image nav ul li {
+        display: none;
+    }
+    .cover-image nav ul li:last-child {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    .text, .image, .images-1, .images-2, .ideas, .image-row img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    .cover-image h1 {
+        display: none;
+    }
+}
