@@ -19,7 +19,7 @@
         <li><a href="#">Services</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#"><i class="fas fa-bars"></i></a></li>
+        <li><a href="#" id="bars"><i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
     <h1>WE ARE CREATIVES</h1>
@@ -36,7 +36,7 @@
             compelling visuals that do most of the marketing for you.</p>
           <a href="#">LEARN MORE</a>
           <center>
-            <div class="underline" style="background-color: yellow;"></div>
+            <div class="underline" id="yellow-underline-1" style="background-color: yellow;"></div>
           </center>
         </div>
       </div>
@@ -57,7 +57,7 @@
             build and extend your brand in digital places.</p>
           <a href="#">LEARN MORE</a>
           <center>
-            <div class="underline" style="background-color: hsl(7, 99%, 70%);"></div>
+            <div class="underline" id="red-underline-1" style="background-color: hsl(7, 99%, 70%);"></div>
           </center>
         </div>
       </div>
@@ -75,7 +75,7 @@
             compelling visuals that do most of the marketing for you.</p>
           <a href="#">LEARN MORE</a>
           <center>
-            <div class="underline" style="background-color: yellow;"></div>
+            <div class="underline" id="yellow-underline-2" style="background-color: yellow;"></div>
           </center>
         </div>
       </div>
@@ -93,7 +93,7 @@
             build and extend your brand in digital places.</p>
           <a href="#">LEARN MORE</a>
           <center>
-            <div class="underline" style="background-color: hsl(7, 99%, 70%);"></div>
+            <div class="underline" id="red-underline-2" style="background-color: hsl(7, 99%, 70%);"></div>
           </center>
         </div>
       </div>
@@ -166,6 +166,19 @@
       <span><i class="fab fa-pinterest"></i></span>
     </center>
   </div>
+
+  <div class="hidden-menu" id="menu">
+    <div class="navbar">
+        <span id="close"><a href="#"><i class="fas fa-times"></i></a></span>
+        <br><br>
+        <span><a href="#" onclick="hide()">About</a></span>
+        <span><a href="#" onclick="hide()">Services</a></span>
+        <span><a href="#" onclick="hide()">Products</a></span>
+        <span><a href="#" onclick="hide()">Contact</a></span>
+        <h1>🌤 SUNNYSIDE</h1>
+    </div>
+  </div>
+  <script src="myScript.js"></script>
 </body>
 
 </html>

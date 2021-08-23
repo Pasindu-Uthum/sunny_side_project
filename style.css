@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -133,7 +134,7 @@
 }
 
 .underline {
-  height: 0.2em;
+  height: 0.3em;
   width: 20vw;
   border-radius: 0.1em;
   padding-top: 0;
@@ -284,6 +285,77 @@
 
 .mobile-version {
   display: none;
+}
+
+.hidden-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.navbar {
+  height: 400px;
+  width: 400px;
+  margin-top: 70px;
+  background-color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar span {
+  display: block;
+}
+
+.navbar span:first-child {
+  float: right;
+}
+
+.navbar span a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Red Hat Display', sans-serif;
+  display: block;
+  padding: 16px;
+}
+
+.navbar span a:hover {
+  background: lightblue;
+}
+
+.navbar h1 {
+  font-family: 'Fredoka One', cursive;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .navbar {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .navbar {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 772px) {
